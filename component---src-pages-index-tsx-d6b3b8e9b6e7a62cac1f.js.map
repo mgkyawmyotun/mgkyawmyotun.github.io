@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-index-tsx-d6b3b8e9b6e7a62cac1f.js","mappings":"sIAKA,UAH4B,WAC1B,OAAO","sources":["webpack://my-portfolio/./src/pages/index.tsx"],"sourcesContent":["import * as React from 'react';\n\nconst IndexPage: React.FC = () => {\n  return <h1>Hello World</h1>;\n};\nexport default IndexPage;\n"],"names":[],"sourceRoot":""}
