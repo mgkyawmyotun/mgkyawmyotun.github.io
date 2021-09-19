@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_portfolio=self.webpackChunkmy_portfolio||[]).push([[691],{2494:function(e,t,r){r.r(t);var l=r(7294);t.default=function(){return l.createElement("div",null,l.createElement("h1",{className:"text-red-500 text-3xl hover:text-gray-800 cursor-pointer text-center "},"Hello World"))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-263c32e05083546c9bf6.js.map
