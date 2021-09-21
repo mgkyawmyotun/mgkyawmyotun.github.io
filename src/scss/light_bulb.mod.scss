@@ -1,0 +1,39 @@
+.light_bulb {
+  width: 0.2em;
+  margin-left: 3.5em;
+
+  background: linear-gradient(
+    43.23deg,
+    rgba(255, 58, 235, 0.94) 16.39%,
+    #ff1818 87.96%
+  );
+  position: relative;
+  &::after {
+    content: '';
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background: linear-gradient(
+      43.23deg,
+      rgba(255, 58, 235, 0.94) 16.39%,
+      #ff1818 87.96%
+    );
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+    transform: translateX(-45%) translateY(50%);
+  }
+}
+
+.small {
+  height: 8em;
+  margin-left: 3em;
+}
+.medium {
+  height: 12em;
+}
+.large {
+  height: 15em;
+}
