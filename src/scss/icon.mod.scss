@@ -1,0 +1,13 @@
+@mixin icon_moon_sun {
+  width: 3em;
+  height: 3em;
+  margin-right: 1.25em;
+  margin-top: 1.25em;
+  float: right;
+}
+.moon {
+  @include icon_moon_sun();
+}
+.sun {
+  @include icon_moon_sun();
+}

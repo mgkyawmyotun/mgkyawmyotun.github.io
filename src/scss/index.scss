@@ -1,4 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500;700&display=swap');
 * body {
   margin: 0;
   box-sizing: border-box;
+}
+
+html.dark {
+  --intro: #3f3c3c;
+  --intro-ball-color: linear-gradient(
+    43.23deg,
+    rgba(255, 58, 235, 0.94) 16.39%,
+    #ff1818 87.96%
+  );
+}
+html {
+  --intro: #f1d8de;
+  --intro-ball-color: linear-gradient(
+    43.23deg,
+    rgba(255, 58, 235, 0.94) 16.39%,
+    #ff1818 87.96%
+  );
 }

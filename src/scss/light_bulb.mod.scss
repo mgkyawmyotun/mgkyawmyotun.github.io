@@ -1,26 +1,17 @@
-@import 'color';
+@use 'color' as *;
 .light_bulb {
-  width: 0.2em;
-  margin-left: 2.5em;
+  width: 0.1em;
+  margin-left: 2em;
 
   cursor: pointer;
-  background: linear-gradient(
-    43.23deg,
-    rgba(255, 58, 235, 0.94) 16.39%,
-    #ff1818 87.96%
-  );
+  background: $intro_ball_color;
   position: relative;
   &::after {
     content: '';
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
     border-radius: 50%;
-    background: linear-gradient(
-      43.23deg,
-      rgba(255, 58, 235, 0.94) 16.39%,
-      #ff1818 87.96%
-    );
-
+    background: $intro_ball_color;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -30,12 +21,12 @@
 }
 
 .small {
-  height: 6em;
+  height: 5em;
   margin-left: 1.5em;
 }
 .medium {
-  height: 8em;
+  height: 7em;
 }
 .large {
-  height: 10em;
+  height: 9em;
 }

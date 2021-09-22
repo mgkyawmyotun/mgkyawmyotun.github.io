@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { moon } from '../scss/moon.mod.scss';
+import { moon } from '../scss/icon.mod.scss';
 
 function MoonIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
