@@ -44,7 +44,6 @@ module.exports = {
       resolve: `gatsby-plugin-sass`,
       options: {
         // Override the file regex for Sass
-        implementation: require('node-sass'),
         sassRuleTest: /\.s(a|c)ss$/,
         // Override the file regex for CSS modules
         sassRuleModulesTest: /\.mod\.s(a|c)ss$/,

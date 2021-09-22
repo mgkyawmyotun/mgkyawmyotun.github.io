@@ -1,4 +1,13 @@
+@use 'color' as *;
 .intro__light_bulbs {
   display: flex;
   flex-flow: row nowrap;
+}
+
+.intro {
+  height: 100vh;
+  background-color: $intro;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 5fr;
 }

@@ -1,7 +1,9 @@
+@import 'color';
 .light_bulb {
   width: 0.2em;
-  margin-left: 3.5em;
+  margin-left: 2.5em;
 
+  cursor: pointer;
   background: linear-gradient(
     43.23deg,
     rgba(255, 58, 235, 0.94) 16.39%,
@@ -10,8 +12,8 @@
   position: relative;
   &::after {
     content: '';
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
     background: linear-gradient(
       43.23deg,
@@ -28,12 +30,12 @@
 }
 
 .small {
-  height: 8em;
-  margin-left: 3em;
+  height: 6em;
+  margin-left: 1.5em;
 }
 .medium {
-  height: 12em;
+  height: 8em;
 }
 .large {
-  height: 15em;
+  height: 10em;
 }
