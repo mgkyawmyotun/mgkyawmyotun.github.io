@@ -6,7 +6,6 @@ const IndexPage: React.FC = () => {
   React.useEffect(() => {
     const mode = localStorage.getItem('mode');
     const html = document.querySelector('html');
-    console.log(mode);
     if (mode === 'dark') {
       html.classList.add('dark');
     }
