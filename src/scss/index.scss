@@ -3,6 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
 
 html.dark {
   --intro: #3f3c3c;
@@ -11,12 +18,26 @@ html.dark {
     rgba(255, 58, 235, 0.94) 16.39%,
     #ff1818 87.96%
   );
+  --intro-text-color-first: #dddbdb;
+  --intro-text-color-second: #ffffff;
+  --intro-card: rgba(255, 255, 255, 0.15);
+  --location: #0f1030;
+  --location-border: #b0b2ff;
+  --lcation-text-primary: #ffffff;
+  --lcation-text-secondary: #cacaca;
 }
 html {
   --intro: #f1d8de;
   --intro-ball-color: linear-gradient(
     43.23deg,
-    rgba(255, 58, 235, 0.94) 16.39%,
-    #ff1818 87.96%
+    #eeafe9 42.16%,
+    #fc1f80 114.34%
   );
+  --intro-text-color-first: #595758;
+  --intro-text-color-second: #595758;
+  --intro-card: rgba(34, 34, 34, 0.15);
+  --location: #ffc3d1;
+  --location-border: #fd5d83;
+  --lcation-text-primary: #594348;
+  --lcation-text-secondary: #703b55;
 }

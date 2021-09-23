@@ -11,3 +11,9 @@
 .sun {
   @include icon_moon_sun();
 }
+
+.map {
+  width: 100%;
+  height: 25em;
+  margin-left: 1.5em;
+}
