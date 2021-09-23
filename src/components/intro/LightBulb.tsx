@@ -1,7 +1,12 @@
 import { motion } from 'framer-motion';
 import type { FC } from 'react';
 import React from 'react';
-import { large, light_bulb, medium, small } from '../scss/light_bulb.mod.scss';
+import {
+  large,
+  light_bulb,
+  medium,
+  small,
+} from '../../scss/light_bulb.mod.scss';
 
 type HeightType = 'small' | 'medium' | 'large';
 interface LightBulbType {

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Introduction } from '../components/Introduction';
+import { Introduction } from '../components/intro';
 import { Location } from '../components/Location';
 import '../scss/index.scss';
 const IndexPage: React.FC = () => {

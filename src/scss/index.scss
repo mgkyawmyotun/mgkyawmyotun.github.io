@@ -23,8 +23,13 @@ html.dark {
   --intro-card: rgba(255, 255, 255, 0.15);
   --location: #0f1030;
   --location-border: #b0b2ff;
-  --lcation-text-primary: #ffffff;
-  --lcation-text-secondary: #cacaca;
+  --location-text-primary: #ffffff;
+  --location-text-secondary: #cacaca;
+  --map-stop-color-first: #daffd7;
+  --map-stop-color-second: #12a72a;
+  --map-text-svg: #b2b4ef;
+  --map-text: #ffffff;
+  --map-mandalay: #ff547d;
 }
 html {
   --intro: #f1d8de;
@@ -38,6 +43,11 @@ html {
   --intro-card: rgba(34, 34, 34, 0.15);
   --location: #ffc3d1;
   --location-border: #fd5d83;
-  --lcation-text-primary: #594348;
-  --lcation-text-secondary: #703b55;
+  --location-text-primary: #594348;
+  --location-text-secondary: #703b55;
+  --map-stop-color-first: #daffd7;
+  --map-stop-color-second: #1ad638;
+  --map-text-svg: #fe4570;
+  --map-text: #494949;
+  --map-mandalay: #4200ff;
 }

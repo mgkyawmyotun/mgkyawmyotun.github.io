@@ -1,4 +1,4 @@
-import { Mode } from './../components/Introduction';
+import { Mode } from './../components/intro';
 const isBrowser = typeof window !== 'undefined';
 export function switchToDarkMode(mode: Mode) {
   document.querySelector('html').classList.toggle('dark');
