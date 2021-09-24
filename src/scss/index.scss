@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 * body {
   margin: 0;
   box-sizing: border-box;
@@ -12,6 +13,7 @@ h5 {
 }
 
 html.dark {
+  /** Intro Color **/
   --intro: #3f3c3c;
   --intro-ball-color: linear-gradient(
     43.23deg,
@@ -21,6 +23,7 @@ html.dark {
   --intro-text-color-first: #dddbdb;
   --intro-text-color-second: #ffffff;
   --intro-card: rgba(255, 255, 255, 0.15);
+  /** Location **/
   --location: #0f1030;
   --location-border: #b0b2ff;
   --location-text-primary: #ffffff;
@@ -30,8 +33,18 @@ html.dark {
   --map-text-svg: #b2b4ef;
   --map-text: #ffffff;
   --map-mandalay: #ff547d;
+  /** My Journey Color **/
+  --journey-background: #2d2f37;
+  --journey-header-text: hsla(0, 0%, 100%, 1); 
+  --journey-card-text: #ffffff;
+  --journey-burble-text: #ffffff;
+  --journey-card:background: hsla(0, 0%, 100%, 0.1);
+
+
+
 }
 html {
+  /** Intro Color **/
   --intro: #f1d8de;
   --intro-ball-color: linear-gradient(
     43.23deg,
@@ -41,6 +54,7 @@ html {
   --intro-text-color-first: #595758;
   --intro-text-color-second: #595758;
   --intro-card: rgba(34, 34, 34, 0.15);
+  /** Location **/
   --location: #ffc3d1;
   --location-border: #fd5d83;
   --location-text-primary: #594348;
@@ -50,4 +64,10 @@ html {
   --map-text-svg: #fe4570;
   --map-text: #494949;
   --map-mandalay: #4200ff;
+  /** Journey **/
+  --journey-background:  hsla(346, 100%, 75%, 1); 
+  --journey-header-text: #ffffff;
+  --journey-card-text: #ffffff;
+  --journey-burble-text: #ffffff;
+  --journey-card:background: hsla(330, 1%, 35%, 0.1);
 }

@@ -1,0 +1,49 @@
+@use 'color' as *;
+@use 'font';
+.journey {
+  background: $journey-background;
+  & > h1 {
+    @include font.SansPro;
+    color: $journey-header-text;
+    text-align: center;
+    padding-top: 1.5em;
+    text-transform: uppercase;
+  }
+  & > div {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.journey__bar {
+  width: 2em;
+  height: 100vh;
+  margin-top: 5em;
+  border-right: 4px dashed #767070;
+  position: relative;
+  & > div {
+    @include font.IndieFlower;
+    font-size: 1.05rem;
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: hsla(228, 11%, 35%, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $journey-burble-text;
+    left: 20%;
+  }
+  & > div:nth-child(1) {
+    top: 0;
+  }
+  & > div:nth-child(2) {
+    top: 30%;
+  }
+  & > div:nth-child(3) {
+    top: 60%;
+  }
+}
+
+.journey__cards {
+}

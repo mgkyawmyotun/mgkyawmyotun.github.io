@@ -11,8 +11,15 @@ export const Introduction: FC = () => {
       <LightBulbs />
       <DarkLight />
       <div className={intro__main}>
-        <motion.div whileTap={{ scale: 0.9 }}></motion.div>
-        <div></div>
+        <motion.div
+          whileTap={{ scale: 0.9 }}
+          animate={{ y: 10, x: 5 }}
+          transition={{ duration: 2, repeat: 1000, repeatType: 'reverse' }}
+        ></motion.div>
+        <motion.div
+          animate={{ y: -10, x: -10 }}
+          transition={{ duration: 2, repeat: 1000, repeatType: 'reverse' }}
+        ></motion.div>
         <motion.div
           animate={{ scale: 1 }}
           transition={{ duration: 0.2 }}

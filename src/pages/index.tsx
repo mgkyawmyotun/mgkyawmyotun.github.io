@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Introduction } from '../components/intro';
+import { Journey } from '../components/Journey';
 import { Location } from '../components/Location';
 import '../scss/index.scss';
 const IndexPage: React.FC = () => {
@@ -15,6 +16,7 @@ const IndexPage: React.FC = () => {
     <div>
       <Introduction />
       <Location />
+      <Journey />
     </div>
   );
 };
