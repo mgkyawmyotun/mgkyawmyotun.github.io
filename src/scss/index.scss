@@ -35,13 +35,14 @@ html.dark {
   --map-mandalay: #ff547d;
   /** My Journey Color **/
   --journey-background: #2d2f37;
-  --journey-header-text: hsla(0, 0%, 100%, 1); 
+  --journey-header-text: hsla(0, 0%, 100%, 1);
   --journey-card-text: #ffffff;
   --journey-burble-text: #ffffff;
-  --journey-card:background: hsla(0, 0%, 100%, 0.1);
-
-
-
+  --journey-card: hsla(0, 0%, 100%, 0.1);
+}
+* {
+  transition-property: background;
+  transition-duration: 500ms;
 }
 html {
   /** Intro Color **/
@@ -65,9 +66,9 @@ html {
   --map-text: #494949;
   --map-mandalay: #4200ff;
   /** Journey **/
-  --journey-background:  hsla(346, 100%, 75%, 1); 
+  --journey-background: hsla(346, 100%, 75%, 1);
   --journey-header-text: #ffffff;
   --journey-card-text: #ffffff;
   --journey-burble-text: #ffffff;
-  --journey-card:background: hsla(330, 1%, 35%, 0.1);
+  --journey-card: hsla(330, 1%, 35%, 0.1);
 }

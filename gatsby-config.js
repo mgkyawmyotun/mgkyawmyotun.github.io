@@ -17,6 +17,13 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown_data`,
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
@@ -49,5 +56,6 @@ module.exports = {
         sassRuleModulesTest: /\.mod\.s(a|c)ss$/,
       },
     },
+    `gatsby-transformer-remark`,
   ],
 };

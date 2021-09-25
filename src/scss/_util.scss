@@ -1,0 +1,11 @@
+@mixin ball($color, $width, $height) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+  background: $color;
+}
+@mixin blur($color) {
+  background-color: #{$color};
+  backdrop-filter: blur(10px);
+}

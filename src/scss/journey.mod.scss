@@ -1,7 +1,11 @@
+@use 'util' as *;
 @use 'color' as *;
 @use 'font';
 .journey {
+  width: 100%;
   background: $journey-background;
+  box-sizing: border-box;
+  padding: 1em 0.5em;
   & > h1 {
     @include font.SansPro;
     color: $journey-header-text;
@@ -16,7 +20,6 @@
 }
 .journey__bar {
   width: 2em;
-  height: 100vh;
   margin-top: 5em;
   border-right: 4px dashed #767070;
   position: relative;
@@ -38,12 +41,69 @@
     top: 0;
   }
   & > div:nth-child(2) {
-    top: 30%;
+    top: 40%;
   }
   & > div:nth-child(3) {
-    top: 60%;
+    top: 80%;
   }
 }
 
 .journey__cards {
+  width: 100%;
+  box-sizing: border-box;
+  & > .journey__card:nth-child(1) {
+    & > div:first-child {
+      $color: linear-gradient(
+        43.23deg,
+        rgba(58, 231, 255, 0.94) 16.39%,
+        #0060b8 88.57%
+      );
+      @include ball($color, 6em, 6em);
+      top: -15%;
+      right: -2%;
+    }
+  }
+  & > .journey__card:nth-child(2) {
+    & > div:first-child {
+      $color: linear-gradient(
+        43.23deg,
+        rgba(0, 146, 166, 0.94) 16.39%,
+        #53fb96 88.57%
+      );
+      @include ball($color, 5em, 5em);
+      top: -10%;
+      left: 0;
+    }
+  }
+  & > .journey__card:nth-child(3) {
+    & > div:first-child {
+      $color: linear-gradient(
+        43.23deg,
+        rgba(0, 146, 166, 0.94) 16.39%,
+        #53fb96 88.57%
+      );
+      @include ball($color, 4em, 4em);
+      bottom: -10%;
+      right: -2%;
+    }
+  }
+}
+.journey__card {
+  position: relative;
+  & > div:last-child {
+    box-sizing: border-box;
+    height: 10em;
+    width: 90%;
+    margin-left: 2em;
+    margin-top: 10vw;
+    border-radius: 1em;
+    @include blur($journey-card);
+    @include font.SansPro;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $journey-card-text;
+    padding: 1em 1.5em;
+  }
 }
