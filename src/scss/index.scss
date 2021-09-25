@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 * body {
   margin: 0;
+}
+* {
   box-sizing: border-box;
 }
 h1,
@@ -39,6 +41,11 @@ html.dark {
   --journey-card-text: #ffffff;
   --journey-burble-text: #ffffff;
   --journey-card: hsla(0, 0%, 100%, 0.1);
+  /** Profession **/
+  --profession-bg: #0c1426;
+  --profession-card: #182547;
+  --profession-card-text: #ffffff;
+  --profession-header: #ffffff;
 }
 * {
   transition-property: background;
@@ -71,4 +78,9 @@ html {
   --journey-card-text: #ffffff;
   --journey-burble-text: #ffffff;
   --journey-card: hsla(330, 1%, 35%, 0.1);
+  /** Profession **/
+  --profession-bg: #fc9ab1;
+  --profession-card: #cf7389;
+  --profession-card-text: #ffeef2;
+  --profession-header: #182547;
 }

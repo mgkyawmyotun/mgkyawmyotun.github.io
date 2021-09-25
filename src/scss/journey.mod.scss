@@ -60,7 +60,7 @@
       );
       @include ball($color, 6em, 6em);
       top: -15%;
-      right: -2%;
+      right: 0;
     }
   }
   & > .journey__card:nth-child(2) {
@@ -84,7 +84,7 @@
       );
       @include ball($color, 4em, 4em);
       bottom: -10%;
-      right: -2%;
+      right: 0;
     }
   }
 }
@@ -94,7 +94,7 @@
     box-sizing: border-box;
     height: 10em;
     width: 90%;
-    margin-left: 2em;
+    margin-left: 1.5em;
     margin-top: 10vw;
     border-radius: 1em;
     @include blur($journey-card);

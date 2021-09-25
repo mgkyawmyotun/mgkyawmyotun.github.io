@@ -1,0 +1,40 @@
+@use 'color' as *;
+@use 'font' as *;
+.profession {
+  width: 100%;
+  background: $profession-bg;
+  text-align: center;
+  padding: 2em 1em;
+  & > h1 {
+    @include SansPro;
+    color: $profession-header;
+    font-size: 2rem;
+  }
+  & > div {
+    margin-top: 2em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+.profession__card {
+  width: 90%;
+  margin: 1em 0em;
+  background-color: $profession-card;
+  color: $profession-card-text;
+  @include SansPro;
+  padding: 1em 1em 2.5em 1em;
+  border-radius: 1em;
+  & > svg {
+    width: 6em;
+    height: 6em;
+  }
+  & > h1 {
+    font-size: 1.25rem;
+  }
+  & > h2 {
+    margin-top: 0.5em;
+    font-size: 0.8rem;
+    word-wrap: break-word;
+  }
+}

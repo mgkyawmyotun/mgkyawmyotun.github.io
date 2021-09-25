@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Introduction } from '../components/intro';
 import { Journey } from '../components/Journey';
 import { Location } from '../components/Location';
+import { Profession } from '../components/Profession';
 import '../scss/index.scss';
 const IndexPage: React.FC = () => {
   React.useEffect(() => {
@@ -17,6 +18,7 @@ const IndexPage: React.FC = () => {
       <Introduction />
       <Location />
       <Journey />
+      <Profession />
     </div>
   );
 };
