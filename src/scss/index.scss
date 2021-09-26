@@ -46,6 +46,17 @@ html.dark {
   --profession-card: #182547;
   --profession-card-text: #ffffff;
   --profession-header: #ffffff;
+  /** Project **/
+  --project-color: #3b2f39;
+  --project-header: #ffffff;
+  --project-card-color: rgba(82, 66, 80, 0.5);
+  --project-language: #645162;
+  --project-text: #ffffff;
+  /**  Contact Area **/
+  --contact-bg: hsla(0, 2%, 32%, 1);
+  --contact-card-form: rgba(36, 32, 32, 0.2);
+  --contact-card-text-header: hsla(0, 0%, 100%, 1);
+  --contact-card-text-placeholder: hsla(0, 1%, 74%, 1);
 }
 * {
   transition-property: background;
@@ -83,4 +94,15 @@ html {
   --profession-card: #cf7389;
   --profession-card-text: #ffeef2;
   --profession-header: #182547;
+  /** Project **/
+  --project-color: #5c86f3;
+  --project-header: hsla(346, 100%, 97%, 1);
+  --project-card-color: hsla(224, 93%, 76%, 0.5);
+  --project-language: #3f75ff;
+  --project-text: #645162;
+  /**  Contact Area **/
+  --contact-bg: hsla(223, 90%, 72%, 1);
+  --contact-card-form: hsla(0, 6%, 13%, 0.2);
+  --contact-card-text-header: hsla(346, 100%, 97%, 1);
+  --contact-card-text-placeholder: hsla(0, 1%, 74%, 1);
 }

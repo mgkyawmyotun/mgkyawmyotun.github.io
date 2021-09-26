@@ -1,0 +1,69 @@
+@use 'color' as *;
+@use 'font' as *;
+@use 'util' as *;
+.contact {
+  padding: 2em 1.5em;
+  width: 100%;
+  height: 100vh;
+  background: $contact-bg;
+  position: relative;
+  & > h1 {
+    @include SansPro;
+    text-align: center;
+    font-size: 1.5rem;
+    color: $contact-card-text-header;
+    text-transform: uppercase;
+    mix-blend-mode: overlay;
+  }
+
+  & > div:first-of-type {
+    top: 4em;
+    left: 0;
+    $color: linear-gradient(
+      43.23deg,
+      rgba(58, 231, 255, 0.94) 16.39%,
+      #0060b8 88.57%
+    );
+    @include ball($color, 5em, 5em);
+  }
+  & > div:nth-of-type(2) {
+    bottom: 0;
+    right: 0;
+    @include ball($intro_ball_color, 10em, 10em);
+  }
+  & > div:last-child {
+    border-radius: 1em;
+    margin-top: 2em;
+    width: 100%;
+    height: 40em;
+    @include blur($contact-card-form);
+    padding: 2em 2em;
+  }
+}
+.form_input {
+  margin-top: 1em;
+  & > h1 {
+    @include SansPro;
+    color: $contact-card-text-header;
+    font-size: 0.8rem;
+  }
+  & > input {
+    @include SansPro;
+    width: 100%;
+    height: 10em;
+    margin-top: 0.5em;
+    padding: 1em;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    &::placeholder {
+      color: $contact-card-text-placeholder;
+      font-size: 0.8rem;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

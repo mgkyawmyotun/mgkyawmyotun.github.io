@@ -1,0 +1,19 @@
+@use 'color' as *;
+@use 'font' as *;
+@use 'util' as *;
+.project {
+  width: 100%;
+  height: 100vh;
+  background-color: $project-color;
+  padding: 4em 1em;
+  text-align: center;
+  & > h1 {
+    @include SansPro;
+    font-size: 1.25rem;
+    color: $project-header;
+    text-transform: uppercase;
+    mix-blend-mode: overlay;
+  }
+}
+.project__card {
+}

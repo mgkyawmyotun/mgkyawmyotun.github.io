@@ -18,22 +18,14 @@
 
   position: relative;
   & > div:first-child {
-    position: absolute;
-    width: 5em;
-    height: 5em;
-    border-radius: 50%;
     top: 4em;
     left: 0;
-    background: $intro_ball_color;
+    @include ball($intro_ball_color, 5em, 5em);
   }
   & > div:nth-child(2) {
-    position: absolute;
     bottom: 0;
     right: 0;
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
-    background: $intro_ball_color;
+    @include ball($intro_ball_color, 10em, 10em);
   }
   & > div:last-child {
     width: 100%;

@@ -7,5 +7,5 @@
 }
 @mixin blur($color) {
   background-color: #{$color};
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(29px);
 }

@@ -8,10 +8,12 @@
   padding: 1em 0.5em;
   & > h1 {
     @include font.SansPro;
+    font-size: 1.5rem;
     color: $journey-header-text;
     text-align: center;
     padding-top: 1.5em;
     text-transform: uppercase;
+    mix-blend-mode: overlay;
   }
   & > div {
     display: flex;
@@ -94,7 +96,7 @@
     box-sizing: border-box;
     height: 10em;
     width: 90%;
-    margin-left: 1.5em;
+    margin-left: 1.75em;
     margin-top: 10vw;
     border-radius: 1em;
     @include blur($journey-card);
