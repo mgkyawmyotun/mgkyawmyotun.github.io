@@ -31,13 +31,23 @@
     right: 0;
     @include ball($intro_ball_color, 10em, 10em);
   }
-  & > div:last-child {
+  & > div:last-of-type {
     border-radius: 1em;
     margin-top: 2em;
     width: 100%;
-    height: 40em;
     @include blur($contact-card-form);
     padding: 2em 2em;
+
+    & > button {
+      margin-top: 2em;
+      @include SansPro;
+      background: transparent;
+      font-size: 1rem;
+      padding: 0.5em 1em;
+      width: 100%;
+      border: 2px solid white;
+      color: $contact-card-text-header;
+    }
   }
 }
 .form_input {
@@ -50,9 +60,36 @@
   & > input {
     @include SansPro;
     width: 100%;
-    height: 10em;
     margin-top: 0.5em;
     padding: 1em;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    &::placeholder {
+      color: $contact-card-text-placeholder;
+      font-size: 0.8rem;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.form_textarea {
+  margin-top: 1em;
+  & > h1 {
+    @include SansPro;
+    color: $contact-card-text-header;
+    font-size: 0.8rem;
+  }
+  & > textarea {
+    @include SansPro;
+    width: 100%;
+    margin-top: 0.5em;
+    padding: 1em;
+    height: 10em;
     border-radius: 0.5em;
     font-size: 1rem;
     background-color: transparent;
