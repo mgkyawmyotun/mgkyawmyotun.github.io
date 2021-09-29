@@ -1,10 +1,19 @@
 @use 'color' as *;
+@use 'util' as *;
 @mixin icon_moon_sun {
   width: 3em;
   height: 3em;
   margin-right: 1.25em;
   margin-top: 1.25em;
   float: right;
+  @include tablet {
+    width: 3.5em;
+    height: 3.5em;
+  }
+  @include laptop {
+    width: 4em;
+    height: 4em;
+  }
 }
 .moon {
   @include icon_moon_sun();
@@ -16,6 +25,12 @@
 .map {
   width: 100%;
   height: 25em;
+  @include tablet {
+    height: 30em;
+  }
+  @include laptop {
+    height: 35em;
+  }
   & > defs > linearGradient {
     stop:first-child {
       stop-color: $map-stop-first;

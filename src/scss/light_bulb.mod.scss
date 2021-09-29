@@ -1,8 +1,12 @@
+@use 'util' as *;
 @use 'color' as *;
 .light_bulb {
   width: 0.1em;
   margin-left: 2em;
 
+  @include tablet {
+    width: 0.15em;
+  }
   cursor: pointer;
   background: $intro_ball_color;
   position: relative;
@@ -17,16 +21,31 @@
     left: 0;
     transform-origin: center;
     transform: translateX(-45%) translateY(50%);
+
+    @include tablet {
+      width: 3em;
+      height: 3em;
+    }
   }
 }
 
 .small {
   height: 5em;
   margin-left: 1.5em;
+  @include tablet {
+    height: 6em;
+    margin-left: 1.5em;
+  }
 }
 .medium {
   height: 7em;
+  @include tablet {
+    height: 9em;
+  }
 }
 .large {
   height: 9em;
+  @include tablet {
+    height: 12em;
+  }
 }

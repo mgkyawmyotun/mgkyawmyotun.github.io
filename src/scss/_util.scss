@@ -9,3 +9,20 @@
   background-color: #{$color};
   backdrop-filter: blur(29px);
 }
+
+@mixin tablet {
+  @media screen and (min-width: 37.5em) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: 64.063em) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 80.063em) {
+    @content;
+  }
+}

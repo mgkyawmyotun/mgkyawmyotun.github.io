@@ -1,5 +1,6 @@
 @use 'font';
 @use 'color' as *;
+@use 'util' as *;
 .location {
   background-color: $location;
   display: grid;
@@ -7,6 +8,10 @@
   grid-template-rows: 1fr 1.5fr;
   padding: 1em 2em;
   place-items: center;
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
   & > div:last-child {
     position: relative;
     width: 100%;
@@ -29,16 +34,30 @@
     box-shadow: 0 0 0 0.1em $location_border, 0 0 0 0.8em $location,
       0 0 0 0.9em $location_border;
     box-sizing: border-box;
+    @include tablet {
+      width: 20em;
+      height: 14em;
+    }
+    @include laptop {
+      width: 25em;
+      height: 12em;
+    }
     & > h1 {
       font-size: 1.25rem;
       font-weight: 500;
       color: $location_text_primary;
+      @include tablet {
+        font-size: 1.5rem;
+      }
     }
     & > h2 {
       margin-top: 1em;
       font-weight: normal;
       font-size: 0.75rem;
       color: $location_text_secondary;
+      @include tablet {
+        font-size: 1.25rem;
+      }
     }
   }
 }
