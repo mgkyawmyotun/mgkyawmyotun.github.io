@@ -2,43 +2,47 @@
 @use 'font' as *;
 @use 'util' as *;
 .profession {
-  width: 100%;
   background: $profession-bg;
-  text-align: center;
-  padding: 2em 2em;
+  box-sizing: border-box;
+  padding: 5em 2em;
   & > h1 {
     @include SansPro;
+    text-align: center;
     color: $profession-header;
     font-size: 2rem;
   }
   & > div {
+    text-align: center;
     margin-top: 2em;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 4em;
+
+    justify-content: center;
     @include tablet {
-      flex-flow: row nowrap;
-      justify-content: space-between;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3, minmax(0, 20em));
     }
   }
 }
 .profession__card {
-  width: 100%;
   margin: 1em 0em;
   background-color: $profession-card;
   color: $profession-card-text;
   @include SansPro;
-  padding: 1em 1em 2.5em 1em;
+  box-sizing: border-box;
   border-radius: 1em;
-  @include tablet {
-    width: 12em;
-  }
+  padding: 1em 1em;
   & > svg {
     width: 6em;
     height: 6em;
   }
   & > h1 {
     font-size: 1.25rem;
+    word-wrap: break-word;
   }
   & > h2 {
     margin-top: 0.5em;
